@@ -1,0 +1,27 @@
+{
+  "name": "trimulab_task",
+  "version": "1.0.0",
+  "description": "Coderbyte NodeJS Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaisumRiaz/trimulab_task.git"
+  },
+  "author": "Haisum Riaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HaisumRiaz/trimulab_task/issues"
+  },
+  "homepage": "https://github.com/HaisumRiaz/trimulab_task#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
