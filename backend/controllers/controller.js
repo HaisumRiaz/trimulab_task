@@ -7,7 +7,10 @@ const getEmployee = (req, res) => {
 // Description:     Add Employee
 // Route:           POST /api/employee
 const addEmployee = (req, res) => {
-  res.status(200).send("POST REQUEST Executed");
+  if (!req.body.text) {
+    res.status(400).send("Bad Request");
+  }
+  res.status(200).send(`POST REQUEST Executed: ${req.body.text}`);
 };
 
 // Description:     Update Employee
@@ -18,7 +21,7 @@ const updateEmployee = (req, res) => {
 
 // Description:     Delete Employee
 // Route:           Delete /api/employee
-const deleteEmployee = (req, res) => {
+const deleteEmployee = async (req, res) => {
   res.status(200).send(`DELETE REQUEST Executed ID: ${req.params.id}`);
 };
 
