@@ -3,6 +3,12 @@ const express = require("express");
 const dotenv = require("dotenv").config;
 const { errorHandler } = require("./middleware/errorHandler");
 
+// D
+const db = require("./config/database");
+db.authenticate()
+  .then(() => console.log("Database Connected"))
+  .catch((err) => console.log("Error" + err));
+
 // Select Port Number
 const port = process.env.PORT || 5000;
 

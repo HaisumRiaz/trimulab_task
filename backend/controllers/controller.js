@@ -1,13 +1,11 @@
 const asyncHandler = require("express-async-handler");
 
-// Description:     Get Employee
-// Route:           GET /api/employee
+// Get
 const getEmployee = asyncHandler(async (req, res) => {
   res.status(200).send("GET REQUEST Executed");
 });
 
-// Description:     Add Employee
-// Route:           POST /api/employee
+// Add
 const addEmployee = asyncHandler(async (req, res) => {
   if (!req.body.text) {
     res.status(400).send("Bad Request");
@@ -15,14 +13,12 @@ const addEmployee = asyncHandler(async (req, res) => {
   res.status(200).send(`POST REQUEST Executed: ${req.body.text}`);
 });
 
-// Description:     Update Employee
-// Route:           PUT /api/employee
+// Update
 const updateEmployee = asyncHandler(async (req, res) => {
   res.status(200).send(`PUT REQUEST Executed ID: ${req.params.id}`);
 });
 
-// Description:     Delete Employee
-// Route:           Delete /api/employee
+// Delete
 const deleteEmployee = asyncHandler(async (req, res) => {
   res.status(200).send(`DELETE REQUEST Executed ID: ${req.params.id}`);
 });
