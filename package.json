@@ -24,6 +24,10 @@
     "body-parser": "^1.19.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "express-async-handler": "^1.2.0"
+    "express-async-handler": "^1.2.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "run": "^1.4.0",
+    "sequelize": "^6.17.0"
   }
 }
