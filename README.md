@@ -1,4 +1,7 @@
 # trimulab_task
 
 Coderbyte NodeJS Project
- commit from Dev
+
+## Run Server using
+
+`npm run server`
